@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography } from '@mui/material'
 import { TodoLists } from './todos/components/TodoLists'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
 const MainAppBar = () => {
   return (
@@ -34,10 +35,14 @@ const MainWrapper = ({ children }) => {
 }
 
 const App = () => {
+  const queryClient = new QueryClient()
+
   return (
-    <MainWrapper>
-      <TodoLists style={{ margin: '1rem' }} />
-    </MainWrapper>
+    <QueryClientProvider client={queryClient}>
+      <MainWrapper>
+        <TodoLists style={{ margin: '1rem' }} />
+      </MainWrapper>
+    </QueryClientProvider>
   )
 }
 

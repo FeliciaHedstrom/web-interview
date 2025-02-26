@@ -1,0 +1,26 @@
+[
+  {
+    "id": "a71e1bfa-886b-4125-87f6-0bd5fba8b954",
+    "title": "First list",
+    "items": [
+      {
+        "id": "b47e0444-4d14-41be-ad4e-3fd2a9f879bc",
+        "text": "First todo of first list!",
+        "completed": false
+      }
+    ],
+    "completed": false
+  },
+  {
+    "id": "fc76c745-61ca-4971-b939-594f893d424d",
+    "title": "Second list",
+    "items": [
+      {
+        "id": "9e47e9aa-42a9-44fd-88a4-b1a26e6b6044",
+        "text": "First todo of second list!",
+        "completed": false
+      }
+    ],
+    "completed": false
+  }
+]
